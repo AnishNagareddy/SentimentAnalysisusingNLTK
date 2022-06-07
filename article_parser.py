@@ -7,7 +7,9 @@ from tqdm import tqdm
 
 # get list of news articles from Aljazeera
 
-def scrape_coverpage(coverpage_url, links=[]):
+def scrape_coverpage(coverpage_url, links=None):
+    if links is None:
+        links = []
     r = requests.get(coverpage_url)
     html = r.content
     # print(html)
@@ -25,7 +27,9 @@ def scrape_coverpage(coverpage_url, links=[]):
             # print(linkText)
 
 
-def article_parser(links=[]):
+def article_parser(links=None):
+    if links is None:
+        links = []
     df = pd.DataFrame(columns=['Title', 'Subtitle', 'Date', 'Content'])
     title = []
     subtitle = []
@@ -62,6 +66,3 @@ def data_proccesing(data):
     data['Content'] = data['Content'].str.encode("ascii", "ignore").str.decode('ascii')
     data['Content'] = data['Content'].str.replace(r'\n', ' ', regex=True)
     data['Content'] = data['Content'].str.strip()
-
-
-

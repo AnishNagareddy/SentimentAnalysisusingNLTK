@@ -1,10 +1,5 @@
-from pathlib import Path
-
-import pandas as pd
 import plotly.express as px
-import plotly.io as pio
 from nltk.sentiment import SentimentIntensityAnalyzer
-import kaleido
 
 
 # using VADER form the nltk library in order to calculate compound values and then seperate each sentence

@@ -19,7 +19,7 @@ def main():
 
     # # push it to json file
     for i in tqdm(range(0, 100), desc="Converting to JSON File"):
-        jsn = data.to_json('./Data/article_data.json', orient="index", indent=4)
+        data.to_json('./Data/article_data.json', orient="index", indent=4)
 
     for i in tqdm(range(0, 100), desc="Performing VADER Analysis and Converting Data to CSV"):
         vader_analysis(data)
