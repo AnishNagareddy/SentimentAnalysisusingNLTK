@@ -8,9 +8,17 @@
 ```
 pip install -r requirements.txt
 ```
+or
+```
+py -m pip install -r requirements.txt
+```
 ### Executing the program
 ```
-<python main.py>
+python main.py
+```
+or
+```
+py main.py
 ```
 ## Overview of the Project 
 
