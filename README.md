@@ -1,5 +1,6 @@
 # SentimentAnalysisusingNLTK
 * Sentiment Analysis of Aljazeera Articles using NLP Machine Learning Models 
+* The total time of operation to run this code was around 15 seconds on average
 
 ## Getting Started
 
@@ -22,10 +23,11 @@ pip install -r requirements.txt
 #### Barplot
 ![Barplot](/Plots/bar.png)
 #### Scatterplot
-![Scatterploy](/Plots/scatterplot.png)
+![Scatterplot](/Plots/scatterplot.png)
 ## Extra 
 * I also made another parser that takes the article and stores sentence by sentence for more data points in model training. 
 * This is not used in the main script but could be helpful for the future 
+* Also used the tqdm library to show real time processing of the program on the command line interface
 ## Help
 
 * If you run into any issues or have any further ideas for this project, please contact me at nagaredd@usc.edu!
